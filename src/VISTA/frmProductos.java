@@ -50,7 +50,7 @@ public class frmProductos extends javax.swing.JFrame {
         txtCategoria = new javax.swing.JTextField();
         btnAgregar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        tbProductos = new javax.swing.JTable();
+        tablaMostrar = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(800, 600));
@@ -113,7 +113,7 @@ public class frmProductos extends javax.swing.JFrame {
         btnAgregar.setText("Agregar");
         jPanel1.add(btnAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 120, 40));
 
-        tbProductos.setModel(new javax.swing.table.DefaultTableModel(
+        tablaMostrar.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -124,7 +124,7 @@ public class frmProductos extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(tbProductos);
+        jScrollPane1.setViewportView(tablaMostrar);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, 650, 220));
 
@@ -203,7 +203,7 @@ public class frmProductos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     public javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable tbProductos;
+    public javax.swing.JTable tablaMostrar;
     public javax.swing.JTextField txtBuscar;
     public javax.swing.JTextField txtCategoria;
     public javax.swing.JTextField txtNombre;

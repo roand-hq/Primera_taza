@@ -21,8 +21,9 @@ private PRODUCTO Modelo;
     public ctrlProductos(frmProductos a, PRODUCTO b) {
        this.Vista = a;
        this.Modelo = b;
-       
        a.btnAgregar.addMouseListener(this);
+       a.tablaMostrar.addMouseListener(this);
+       Modelo.Mostrar(Vista.tablaMostrar);
     }
 
     @Override
@@ -33,6 +34,7 @@ private PRODUCTO Modelo;
            Modelo.setCategoria(Vista.txtCategoria.getText());
           
          Modelo.Guardar();
+         Modelo.Mostrar(Vista.tablaMostrar);
         }
     }
 
